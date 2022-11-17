@@ -15,7 +15,7 @@ n=\`ps -ef | grep kafka | grep -v grep |wc -l\`
 num=\$?
 proc_id()
 {
-	pid=\`ps -ef | grep kafka | grep -v grep | awk '{print \$2}'\`
+	pid=\`ps -ef | grep kafka-server-start.sh | grep -v grep | awk '{print \$2}'\`
 }
  
 if [ \$num -eq 0 ]
